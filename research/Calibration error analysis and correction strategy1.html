@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+body { text-align: left}
+
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:800px;
+	height:800px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:800px;
+	height:60px;
+	z-index:2;
+}
+#Layer3 {
+	position:absolute;
+	left:0px;
+	top:60px;
+	width:800px;
+	height:30px;
+	z-index:2;
+}
+#Layer4 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:112px;
+	height:30px;
+	z-index:3;
+}
+#Layer5 {
+	position:absolute;
+	left:112px;
+	top:0px;
+	width:121px;
+	height:30px;
+	z-index:3;
+}
+#Layer6 {
+	position:absolute;
+	left:233px;
+	top:0px;
+	width:145px;
+	height:30px;
+	z-index:3;
+}
+#Layer7 {
+	position:absolute;
+	left:378px;
+	top:0px;
+	width:120px;
+	height:30px;
+	z-index:3;
+}
+#Layer8 {
+	position:absolute;
+	left:498px;
+	top:0px;
+	width:133px;
+	height:30px;
+	z-index:3;
+}
+#Layer9 {
+	position:absolute;
+	left:631px;
+	top:0px;
+	width:169px;
+	height:30px;
+	z-index:3;
+}
+
+
+#Layer11 {
+	position:absolute;
+	left:143px;
+	top:90px;
+	width:515px;
+	height:710px;
+	z-index:3;
+}
+#Layer12 {
+	position:absolute;
+	left:689px;
+	top:90px;
+	width:111px;
+	height:710px;
+	z-index:3;
+}
+
+#Layer14 {
+	position:absolute;
+	left:0px;
+	top:90px;
+	width:142px;
+	height:710px;
+	z-index:4;
+}
+
+
+
+
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer11">
+  <p align="left">&nbsp;</p>
+  <p><strong>Calibration error analysis and correction strategy</strong></p>
+  <p>In  dual-energy digital mammography (DEDM) the imaged object is a human breast,  while in calibration measurements only the phantoms of breast tissue equivalent  materials are available. Consequently, the differences between phantoms and  breast tissues will lead to the calibration phantom errors. </p>
+  <p>Based on  the dual-energy imaging model, we derived the formulas of calibration phantom  errors. The DEDE imaging model  is<br />
+      <img width="537" height="80" src="Calibration error analysis and correction strategy1_image002.gif" /> <br />
+    Let <em>g’</em> and <em>tc’</em> represent the calculated glandular  ratio and microcalcification thickness of the phantoms:<br />
+  <img width="67" height="19" src="Calibration error analysis and correction strategy1_image004.gif" />,&nbsp; <img width="67" height="19" src="Calibration error analysis and correction strategy1_image006.gif" />,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+    where D<em>g</em> and D<em>tc</em> are calibration phantom errors. <br />
+  <img width="366" height="53" src="Calibration error analysis and correction strategy1_image008.gif" />, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <img width="321" height="53" src="Calibration error analysis and correction strategy1_image010.gif" />.&nbsp;&nbsp;&nbsp; </p>
+  <p>where <img width="23" height="28" src="Calibration error analysis and correction strategy1_image012.gif" />, <img width="21" height="28" src="Calibration error analysis and correction strategy1_image014.gif" />&nbsp;and <img width="23" height="28" src="Calibration error analysis and correction strategy1_image016.gif" />&nbsp;are  defined as<br />
+      <img width="546" height="80" src="Calibration error analysis and correction strategy1_image018.gif" /><img width="520" height="60" src="Calibration error analysis and correction strategy1_image020.gif" />,&nbsp;&nbsp; <br />
+      <img width="548" height="56" src="Calibration error analysis and correction strategy1_image022.gif" />&nbsp;</p>
+  <p>Then, this  type of error is quantitatively analyzed using publicly available data and  compared with other types of errors. The results demonstrate that the  calibration phantom error is large and dominant in dual-energy mammography,  seriously decreasing calculation precision. </p>
+  <p align="center"><strong>Table 2</strong>. Calibration phantom errors for microcalcification thickness D<em>tc</em> (mm)</p>
+  <div align="center">
+    <table border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+      <tr>
+        <td rowspan="2"><br />
+          Glandular ratio<br />
+          g (%) </td>
+        <td colspan="11"><p align="center">Microcalcification thickness <em>tc</em> (mm)</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">0</p></td>
+        <td><p align="center">50</p></td>
+        <td><p align="center">100</p></td>
+        <td><p align="center">150</p></td>
+        <td><p align="center">200</p></td>
+        <td><p align="center">250</p></td>
+        <td><p align="center">300</p></td>
+        <td><p align="center">350</p></td>
+        <td><p align="center">400</p></td>
+        <td><p align="center">450</p></td>
+        <td><p align="center">500</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">0</p></td>
+        <td><p align="center">-64</p></td>
+        <td><p align="center">-64</p></td>
+        <td><p align="center">-65</p></td>
+        <td><p align="center">-66</p></td>
+        <td><p align="center">-66</p></td>
+        <td><p align="center">-67</p></td>
+        <td><p align="center">-67</p></td>
+        <td><p align="center">-67</p></td>
+        <td><p align="center">-68</p></td>
+        <td><p align="center">-69</p></td>
+        <td><p align="center">-69</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">10</p></td>
+        <td><p align="center">-11</p></td>
+        <td><p align="center">-11</p></td>
+        <td><p align="center">-12</p></td>
+        <td><p align="center">-13</p></td>
+        <td><p align="center">-14</p></td>
+        <td><p align="center">-14</p></td>
+        <td><p align="center">-15</p></td>
+        <td><p align="center">-16</p></td>
+        <td><p align="center">-16</p></td>
+        <td><p align="center">-17</p></td>
+        <td><p align="center">-18</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">20</p></td>
+        <td><p align="center">45</p></td>
+        <td><p align="center">40</p></td>
+        <td><p align="center">40</p></td>
+        <td><p align="center">39</p></td>
+        <td><p align="center">38</p></td>
+        <td><p align="center">37</p></td>
+        <td><p align="center">36.</p></td>
+        <td><p align="center">35</p></td>
+        <td><p align="center">34</p></td>
+        <td><p align="center">34</p></td>
+        <td><p align="center">33</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">30</p></td>
+        <td><p align="center">93</p></td>
+        <td><p align="center">92</p></td>
+        <td><p align="center">91</p></td>
+        <td><p align="center">90</p></td>
+        <td><p align="center">89</p></td>
+        <td><p align="center">88</p></td>
+        <td><p align="center">87</p></td>
+        <td><p align="center">86</p></td>
+        <td><p align="center">85</p></td>
+        <td><p align="center">84</p></td>
+        <td><p align="center">83</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">40</p></td>
+        <td><p align="center">144</p></td>
+        <td><p align="center">142</p></td>
+        <td><p align="center">141</p></td>
+        <td><p align="center">140</p></td>
+        <td><p align="center">139</p></td>
+        <td><p align="center">138</p></td>
+        <td><p align="center">137</p></td>
+        <td><p align="center">136</p></td>
+        <td><p align="center">135</p></td>
+        <td><p align="center">134</p></td>
+        <td><p align="center">133</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">50</p></td>
+        <td><p align="center">193</p></td>
+        <td><p align="center">192</p></td>
+        <td><p align="center">191</p></td>
+        <td><p align="center">190</p></td>
+        <td><p align="center">188</p></td>
+        <td><p align="center">187</p></td>
+        <td><p align="center">186</p></td>
+        <td><p align="center">185</p></td>
+        <td><p align="center">184</p></td>
+        <td><p align="center">183</p></td>
+        <td><p align="center">182</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">60</p></td>
+        <td><p align="center">243</p></td>
+        <td><p align="center">241</p></td>
+        <td><p align="center">240</p></td>
+        <td><p align="center">239</p></td>
+        <td><p align="center">237</p></td>
+        <td><p align="center">236</p></td>
+        <td><p align="center">235</p></td>
+        <td><p align="center">233</p></td>
+        <td><p align="center">232</p></td>
+        <td><p align="center">231</p></td>
+        <td><p align="center">230</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">70</p></td>
+        <td><p align="center">291</p></td>
+        <td><p align="center">290</p></td>
+        <td><p align="center">288</p></td>
+        <td><p align="center">287</p></td>
+        <td><p align="center">286</p></td>
+        <td><p align="center">284</p></td>
+        <td><p align="center">283</p></td>
+        <td><p align="center">281</p></td>
+        <td><p align="center">280</p></td>
+        <td><p align="center">278</p></td>
+        <td><p align="center">277</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">80</p></td>
+        <td><p align="center">339</p></td>
+        <td><p align="center">338</p></td>
+        <td><p align="center">336</p></td>
+        <td><p align="center">335</p></td>
+        <td><p align="center">333</p></td>
+        <td><p align="center">332</p></td>
+        <td><p align="center">330</p></td>
+        <td><p align="center">328</p></td>
+        <td><p align="center">327</p></td>
+        <td><p align="center">326</p></td>
+        <td><p align="center">324</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">90</p></td>
+        <td><p align="center">387</p></td>
+        <td><p align="center">385</p></td>
+        <td><p align="center">383</p></td>
+        <td><p align="center">382</p></td>
+        <td><p align="center">380</p></td>
+        <td><p align="center">378</p></td>
+        <td><p align="center">377</p></td>
+        <td><p align="center">375</p></td>
+        <td><p align="center">374</p></td>
+        <td><p align="center">372</p></td>
+        <td><p align="center">370</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">100</p></td>
+        <td><p align="center">433</p></td>
+        <td><p align="center">432</p></td>
+        <td><p align="center">430</p></td>
+        <td><p align="center">428</p></td>
+        <td><p align="center">426</p></td>
+        <td><p align="center">425</p></td>
+        <td><p align="center">423</p></td>
+        <td><p align="center">421</p></td>
+        <td><p align="center">419</p></td>
+        <td><p align="center">418</p></td>
+        <td><p align="center">416</p></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><strong>Table 3</strong>. Calibration phantom errors for glandular ratio D<em>g</em> (%).</p>
+  <div align="center">
+    <table border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+      <tr>
+        <td rowspan="2"><br />
+          Glandular ratio<br />
+          g (%) </td>
+        <td colspan="11"><p align="center">Microcalcification thickness <em>tc</em> (mm)</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">0</p></td>
+        <td><p align="center">50</p></td>
+        <td><p align="center">100</p></td>
+        <td><p align="center">150</p></td>
+        <td><p align="center">200</p></td>
+        <td><p align="center">250</p></td>
+        <td><p align="center">300</p></td>
+        <td><p align="center">350</p></td>
+        <td><p align="center">400</p></td>
+        <td><p align="center">450</p></td>
+        <td><p align="center">500</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">0</p></td>
+        <td><p align="center">1.2</p></td>
+        <td><p align="center">1.3</p></td>
+        <td><p align="center">1.3</p></td>
+        <td><p align="center">1.4</p></td>
+        <td><p align="center">1.4</p></td>
+        <td><p align="center">1.4</p></td>
+        <td><p align="center">1.5</p></td>
+        <td><p align="center">1.5</p></td>
+        <td><p align="center">1.6</p></td>
+        <td><p align="center">1.6</p></td>
+        <td><p align="center">1.6</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">10</p></td>
+        <td><p align="center">-2.4</p></td>
+        <td><p align="center">-2.3</p></td>
+        <td><p align="center">-2.2</p></td>
+        <td><p align="center">-2.20</p></td>
+        <td><p align="center">-2.1</p></td>
+        <td><p align="center">-2.1</p></td>
+        <td><p align="center">-2.0</p></td>
+        <td><p align="center">-2.0</p></td>
+        <td><p align="center">-2.0</p></td>
+        <td><p align="center">-1.9</p></td>
+        <td><p align="center">-1.8</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">20</p></td>
+        <td><p align="center">-5.9</p></td>
+        <td><p align="center">-5.8</p></td>
+        <td><p align="center">-5.8</p></td>
+        <td><p align="center">-5.7</p></td>
+        <td><p align="center">-5.6</p></td>
+        <td><p align="center">-5.6</p></td>
+        <td><p align="center">-5.5</p></td>
+        <td><p align="center">-5.5</p></td>
+        <td><p align="center">-5.4</p></td>
+        <td><p align="center">-5.4</p></td>
+        <td><p align="center">-5.3</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">30</p></td>
+        <td><p align="center">-9.4</p></td>
+        <td><p align="center">-9.3</p></td>
+        <td><p align="center">-9.2</p></td>
+        <td><p align="center">-9.2</p></td>
+        <td><p align="center">-9.1</p></td>
+        <td><p align="center">-9.0</p></td>
+        <td><p align="center">-9.0</p></td>
+        <td><p align="center">-8.9</p></td>
+        <td><p align="center">-8.8</p></td>
+        <td><p align="center">-8.8</p></td>
+        <td><p align="center">-8.7</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">40</p></td>
+        <td><p align="center">-12.8</p></td>
+        <td><p align="center">-12.8</p></td>
+        <td><p align="center">-12.7</p></td>
+        <td><p align="center">-12.6</p></td>
+        <td><p align="center">-12.5</p></td>
+        <td><p align="center">-12.4</p></td>
+        <td><p align="center">-12.4</p></td>
+        <td><p align="center">-12.3</p></td>
+        <td><p align="center">-12.2</p></td>
+        <td><p align="center">-12.2</p></td>
+        <td><p align="center">-12.1</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">50</p></td>
+        <td><p align="center">-16.2</p></td>
+        <td><p align="center">-16.1</p></td>
+        <td><p align="center">-16.0</p></td>
+        <td><p align="center">-16.0</p></td>
+        <td><p align="center">-16.0</p></td>
+        <td><p align="center">-15.8</p></td>
+        <td><p align="center">-15.7</p></td>
+        <td><p align="center">-15.6</p></td>
+        <td><p align="center">-15.6</p></td>
+        <td><p align="center">-15.5</p></td>
+        <td><p align="center">-15.4</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">60</p></td>
+        <td><p align="center">-19.6</p></td>
+        <td><p align="center">-19.5</p></td>
+        <td><p align="center">-19.4</p></td>
+        <td><p align="center">-19.3</p></td>
+        <td><p align="center">-19.2</p></td>
+        <td><p align="center">-19.1</p></td>
+        <td><p align="center">-19.0</p></td>
+        <td><p align="center">-18.9</p></td>
+        <td><p align="center">-18.8</p></td>
+        <td><p align="center">-18.7</p></td>
+        <td><p align="center">-18.7</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">70</p></td>
+        <td><p align="center">-22.9</p></td>
+        <td><p align="center">-22.8</p></td>
+        <td><p align="center">-22.7</p></td>
+        <td><p align="center">-22.6</p></td>
+        <td><p align="center">-22.5</p></td>
+        <td><p align="center">-22.4</p></td>
+        <td><p align="center">-22.3</p></td>
+        <td><p align="center">-22.2</p></td>
+        <td><p align="center">-22.1</p></td>
+        <td><p align="center">-22.0</p></td>
+        <td><p align="center">-22.2</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">80</p></td>
+        <td><p align="center">-26.1</p></td>
+        <td><p align="center">-26.0</p></td>
+        <td><p align="center">-25.9</p></td>
+        <td><p align="center">-25.8</p></td>
+        <td><p align="center">-25.7</p></td>
+        <td><p align="center">-25.6</p></td>
+        <td><p align="center">-25.5</p></td>
+        <td><p align="center">-25.4</p></td>
+        <td><p align="center">-25.3</p></td>
+        <td><p align="center">-25.2</p></td>
+        <td><p align="center">-25.1</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">90</p></td>
+        <td><p align="center">-29.3</p></td>
+        <td><p align="center">-29.2</p></td>
+        <td><p align="center">-29.1</p></td>
+        <td><p align="center">-29.0</p></td>
+        <td><p align="center">-28.9</p></td>
+        <td><p align="center">-28.8</p></td>
+        <td><p align="center">-28.6</p></td>
+        <td><p align="center">-28.5</p></td>
+        <td><p align="center">-28.4</p></td>
+        <td><p align="center">-28.3</p></td>
+        <td><p align="center">-28.2</p></td>
+      </tr>
+      <tr>
+        <td><p align="center">100</p></td>
+        <td><p align="center">-32.5</p></td>
+        <td><p align="center">-32.4</p></td>
+        <td><p align="center">-32.2</p></td>
+        <td><p align="center">-32.1</p></td>
+        <td><p align="center">-32.0</p></td>
+        <td><p align="center">-31.9</p></td>
+        <td><p align="center">-31.8</p></td>
+        <td><p align="center">-31.6</p></td>
+        <td><p align="center">-31.5</p></td>
+        <td><p align="center">-31.4</p></td>
+        <td><p align="center">-31.3</p></td>
+      </tr>
+    </table>
+  </div>
+  <p>&nbsp;</p>
+  <p>Further  we found that the imaged objects with the same glandular ratio have identical calibration  phantom error. An error correction method is proposed based on our findings.</p>
+  <p>In DEDM, for an  imaged breast, we can calculate (<em>g’, tc’</em>)  of each pixel pair based on the high- and low-energy image and set up a  coordinate system with the horizontal axis as <em>g’</em> and vertical axis as <em>tc’</em>.  (<em>g’, tc’</em>) of each pixel  pair can be positioned in the coordinate system. Obviously, the computed <em>tc′</em> of non-microcalcification  pixel pair equals their D<em>tc</em>. </p>
+  <p>In full-field digital mammography, there are several millions of pixels  in an image. Because microcalcifications  are small and sparsely present in breast tissues, most pixels in mammogram are  non-microcalcification pixels. With millions of pairs in the coordinate system,  a curve can be fitted. (<em>g’, tc’</em>)on  the fitted curve can be considered as those correspond to non-microcalcification  pixel pairs. Therefore, <em>tc’</em> of (<em>g’, tc’</em>)on the fitted  curve is the calibration phantom error D<em>tc</em>.</p>
+  <p align="center">Recall that the calibration  phantom errors D<em>tc</em> and D<em>g</em> are constant if the imaged objects have the same  glandular ratio. Denote by (<em>gi’,  tci’</em>) the calculated results for any pixel pair<em> Pi</em> in dual-energy mammograms,  we can find the corresponding pair (<em>gi’,  tci0’</em>) on the fitted curve. Therefore, <em>tci0’</em> is the calibration phantom error D<em>tci</em> of the pixel pair<em> Pi</em>. The true microcalcification thickness of the pixel  pair<em> Pi</em> corresponds to <em>tci</em> =<em> tci’- tci0’</em>. <br />
+      <img width="308" height="239" src="Calibration error analysis and correction strategy1_image024.jpg" alt="MATLAB Handle Graphics" /><br />
+    Figure 1. Demonstration of the correction method for calibration  phantom error Δ<em>tc</em> .</p>
+  <p>&nbsp;</p>
+  <p>[1]Mou  XQ, Chen X, Sun LJ, et al. The impact of calibration phantom errors on  dual-energy digital mammography[J]. Physics in Medicine and Biology, 2008, 53  (22): 6321-6336.</p>
+  <p>[2]Mou  XQ and Chen X. Error analysis of calibration materials on dual-energy  mammography[C]. 10th International Conference on Medical Image Computing and  Computer Assisted Intervention (MICCAI 2007, Brisbane, Australia).  Lecture Notes in Computer Science, 2007, 4792: 596~603.</p>
+  <p align="left">&nbsp;</p>
+  <p align="center"><a href="Dual-energy Digital Mammography2.html">[Return]</a></p>
+</div>
+<div id="Layer12">
+  <p>&nbsp;</p>
+  <h3 align="center">LINKS</h3>
+  <p align="center"><a href="http:\\www.xjtu.edu.cn">www.xjtu.edu.cn</a></p>
+  <p align="center">&nbsp;</p>
+</div>
+<div id="Layer14">
+	<p align="center">&nbsp;</p>
+	<h3 align="center">RESEARCH</h3>
+  <ul>
+    <li><a href="Dual-energy Digital Mammography1.html">Dual-energy Digital Mammography</a></li>
+	<li></li>
+  </ul>
+</div>
+<div id="Layer1">
+<div id="Layer2"><img src="../images/ipc1.jpg" width="800" height="60" /></div>
+  <div id="Layer3">
+    <div id="Layer4"><a href="../index.html"><img src="../images/menu1.jpg" border="0" /></a></div>
+    <div id="Layer5"><a href="../faculty.html"><img src="../images/menu2.jpg" border="0" /></a></div>
+    <div id="Layer6"><a href="../research.html"><img src="../images/menu3.jpg" border="0" /></a></div>
+    <div id="Layer7"><img src="../images/menu4.jpg" /></div>
+    <div id="Layer8"><img src="../images/menu5.jpg" /></div>
+    <div id="Layer9"><img src="../images/menu6.jpg" /></div>
+  </div>
+</body>
+
+</html>

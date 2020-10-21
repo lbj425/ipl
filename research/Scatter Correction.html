@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+body { text-align: left}
+
+#Layer1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:800px;
+	height:800px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:800px;
+	height:60px;
+	z-index:2;
+}
+#Layer3 {
+	position:absolute;
+	left:0px;
+	top:60px;
+	width:800px;
+	height:30px;
+	z-index:2;
+}
+#Layer4 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:112px;
+	height:30px;
+	z-index:3;
+}
+#Layer5 {
+	position:absolute;
+	left:112px;
+	top:0px;
+	width:121px;
+	height:30px;
+	z-index:3;
+}
+#Layer6 {
+	position:absolute;
+	left:233px;
+	top:0px;
+	width:145px;
+	height:30px;
+	z-index:3;
+}
+#Layer7 {
+	position:absolute;
+	left:378px;
+	top:0px;
+	width:120px;
+	height:30px;
+	z-index:3;
+}
+#Layer8 {
+	position:absolute;
+	left:498px;
+	top:0px;
+	width:133px;
+	height:30px;
+	z-index:3;
+}
+#Layer9 {
+	position:absolute;
+	left:631px;
+	top:0px;
+	width:169px;
+	height:30px;
+	z-index:3;
+}
+
+
+#Layer11 {
+	position:absolute;
+	left:143px;
+	top:90px;
+	width:515px;
+	height:710px;
+	z-index:3;
+}
+#Layer12 {
+	position:absolute;
+	left:657px;
+	top:90px;
+	width:143px;
+	height:710px;
+	z-index:3;
+}
+
+#Layer14 {
+	position:absolute;
+	left:0px;
+	top:90px;
+	width:142px;
+	height:710px;
+	z-index:4;
+}
+
+
+
+
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer11">
+  <h2 align="left">&nbsp;</h2>
+  <h2 align="left"><strong>Scatter  Correction</strong></h2>
+  <p align="left"><br />
+  X-ray scatter leads to  erroneous calculations of dual-energy digital mammography (DEDM). The existing method  for scatter correction in DEDM is the pinhole-array interpolation method, using  lead sheet and extra exposures, which is complicated and impractical. We are developing a scatter correction algorithm for  DEDM based on the knowledge that scatter in mammograms varies slowly and most pixels in mammograms are non-microcalcification pixels. The algorithm only uses the  information of LE and HE images, doesn’t need scatter grid, lead sheet and extra exposures.</p>
+  <h3 align="left"><strong>Method:</strong></h3>
+  <p align="left"><strong>1. </strong><em>Calibration  and inverse-mapping.</em> A nonlinear inverse mapping technique was used to  generate DE calcification images from separately acquired LE and HE images. A  cubic inverse mapping function could adequately model the μC thickness (<em>tc</em>)  as a function of the LE and HE log-signal (<em>Dl, Dh</em>)</p>
+  <p align="center"><img width="346" height="24" src="Scatter Correction_image002.gif" />&nbsp;,  (1)</p>
+  <p align="left">where <em>Dj=ln(Irj/Ij)</em> <em>(j=l,h)</em>. <em>Irj</em> is the reference signal.</p>
+  <p align="left">2. <em>Scatter  representation.</em><strong> </strong>The signal measured in each pixel of the detector is the sum of the  signal from the primary radiation, <em>P</em>,  and that from scattered radiation, <em>S</em>.  For any pixel<em> i</em> in the LE or HE  images, let <em>Iij’=Pij+Sij  (j=l,h),</em> <em>Pij</em> is the  primary signal, <em>Sij</em> is  scatter and <em>Iij’ </em>is  the measured signal. Then, <em>Dij</em> <em>(j=l,h) </em>can be rewritten as</p>
+  <p align="center"><img width="274" height="20" src="Scatter Correction_image004.gif" />.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (2)</p>
+  <p align="left"><br />
+    Substituting Eq.(2)  into Eq.(1), we would like to solve the scatter <em>Sil </em>and<em> Sih.</em> It can be seen that the coefficients <em>ck</em><em> (</em><em>k=0,…,7)</em>, reference signals <em>Irl </em>and<em> Irh </em>, measured  signals<em> Iil’ </em>and<em> Iih’ </em>are all  known values, and three unknowns <em>tci</em>, <em>Sil </em>and<em> Sih</em> need to be solved. It is impossible to solve three unknowns using one equation.  However, scatter in mammograms is a  quantity of low-frequency because the breast is usually compressed to a largely  uniform thickness during mammography. Therefore, the scatter of one pixel can  be represented by the scatter of its neighbor pixels, polynomials and B-splines  can be used to describe the relations, just as shown in fig.1, scatter of pixel  B1 is represented as <em>SB1j=(SA1j+SA2j)/2 </em><em>(j=l,h)</em>; scatter of pixel C1 is  represented as <em>SC1j=(SA1j+SA2j  +SA3j+SA4j)/4 </em><em>(j=l,h).</em> </p>
+  <p align="center"><br />
+    <img width="265" height="160" src="Scatter Correction_image006.gif" /><br />
+    Fig.1 Sketchmap of the pixel location</p>
+  <p align="left">3. <em>Scatter estimation</em>. We  sample <em>N</em> pixels in LE image and <em>N</em> corresponding pixels in HE image,  respectively. Among these pixel pairs, <em>m</em> pairs are independent pixel pairs whose scatter are unknowns, as pixels Ai (i=1,2,3,4)  in fig.1; <em>n</em> (n&gt;m) pairs are  dependent pixel pairs whose scatter are represented by those of independent pairs,  as pixels B1,B2 and C1. On the other hand, because most pixels in mammograms are non-μCs pixels, the sample pixels can be considered as non-μCs pixels, the corresponding <em>tc</em> is zero. Then, we can set up an  equations set with <em>N</em> equations (Each  is Eq.(1).) and <em>2m</em> unknowns <em>Sij </em><em>(i=1,…,m;j=l,h)</em>, N=m+n&gt;2m. The <em>2m</em> unknowns <em>Sij</em> are determined by a least-squares fit of the  measured signals <em>Iij’</em><em> (i=1,…,N;j=l,h) </em>of the <em>N</em> pixels.</p>
+  <p align="left"><strong>Results: </strong><br />
+    First,  our investigation was based on simulation. Monte Carlo  simulation (EGSnrc) was used for scatter data generation and Richardson-Lucy  (RL) fitting acceleration (pp. 584-590, IEEE Trans on Med. Imaging, 23(5),  2004) was used. The primary data was generated by analytical computing. There  are 117 sample pixels shown in fig.2(a), 45 independent pixels(yellow) and 72  dependent pixels (red and mauve). Then, we had the equations set with 117  equations and 90 unknowns. A weighted least-squares fit is employed to estimate the  90 unknowns<em> Sij </em><em>(i=1,…,45;j=l,h)</em></p>
+  <p align="center">. <br />
+    <img width="258" height="131" src="Scatter Correction_image008.gif" /><img width="269" height="131" src="Scatter Correction_image010.gif" /><br />
+    (a) LE image and the sample pixels&nbsp;  (b) HE Image<br />
+    Fig.2 Images  of the rectangular block of breast tissue-equivalent material and the positions  of sample pixels.  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="245" height="171" src="Scatter Correction_image012.gif" /><img width="245" height="171" src="Scatter Correction_image014.gif" /><br />
+    (a) LE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;(b) HE<br />
+    Fig.3 Performance  of scatter correction</p>
+  <p align="left"><br />
+    The original scatter of each pixel is <em>Sij </em><em>(i=1,…,45;j=l,h) </em>and  the resultant scatter estimation is <em>Sij’</em>. The scatter to primary ratio (SPR) is illustrated in fig.3. The  original SPR (<em>Sij/Pij</em>) is shown as the upper surface and the corrected SPR (<em>|Sij-Sij’|/Pij</em>)  is shown as the lower surface.  In the central region of the images, before scatter correction, SPR is ~40% for LE image, ~30% for HE image;  after scatter correction, SPR decreases to ~1% for LE image, ~0.5% for HE  image. In the edge region, the  SPR can decrease to &lt;10%. It can be seen that the proposed scatter  correction method works well, especially for the pixels in the central region. </p>
+  <p>We are  working on <em>Sij </em>estimationusing images acquired in clinical  digital mammography systems. The paper is prepared. In the future, we will use  finite element method and B-spline interpolation, instead of weighted least-squares  fit with linear interpolation. We hope that SPR could be reduced further. </p>
+  <p>[1]Chen  X., Mou XQ., Yan H. Scatter correction algorithm without extra exposure for  dual-energy digital mammography[C]. SPIE Medical Imaging 2009 (Lake Buena Vista, FL,   USA). SPIE,  2009, 7258: 725840.</p>
+  <p align="center"><a href="Dual-energy Digital Mammography2.html">[Return]</a></p>
+</div>
+<div id="Layer12">
+  <p>&nbsp;</p>
+  <h3 align="center">LINKS</h3>
+  <p align="center"><a href="http:\\www.xjtu.edu.cn">www.xjtu.edu.cn</a></p>
+  <p align="center">&nbsp;</p>
+</div>
+<div id="Layer14">
+	<p align="center">&nbsp;</p>
+	<h3 align="center">RESEARCH</h3>
+  <ul>
+    <li><a href="Dual-energy Digital Mammography1.html">Dual-energy Digital Mammography</a></li>
+	<li></li>
+  </ul>
+</div>
+<div id="Layer1">
+<div id="Layer2"><img src="../images/ipc1.jpg" width="800" height="60" /></div>
+  <div id="Layer3">
+    <div id="Layer4"><a href="../index.html"><img src="../images/menu1.jpg" border="0" /></a></div>
+    <div id="Layer5"><a href="../faculty.html"><img src="../images/menu2.jpg" border="0" /></a></div>
+    <div id="Layer6"><a href="../research.html"><img src="../images/menu3.jpg" border="0" /></a></div>
+    <div id="Layer7"><img src="../images/menu4.jpg" /></div>
+    <div id="Layer8"><img src="../images/menu5.jpg" /></div>
+    <div id="Layer9"><img src="../images/menu6.jpg" /></div>
+  </div>
+</body>
+
+</html>
